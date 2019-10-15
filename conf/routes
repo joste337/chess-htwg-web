@@ -1,10 +1,8 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# https://www.playframework.com/documentation/latest/ScalaRouting
-# ~~~~
+GET     /                           controllers.MainController.chess
+GET     /chess                      controllers.MainController.chess
+POST    /chess/new                  controllers.MainController.newGrid
+GET     /chess/move                 controllers.MainController.move(fromRow: Int, fromCol: Int, toRow: Int, toCol: Int)
+POST    /chess/save                 controllers.MainController.save
+GET     /chess/load                 controllers.MainController.load
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-
-# Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
