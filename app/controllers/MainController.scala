@@ -17,6 +17,10 @@ class MainController @Inject()(cc: ControllerComponents) extends AbstractControl
 
   controller.createNewGrid
 
+  def index() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.index())
+  }
+
   def chess() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.chess(controller = controller))
   }
