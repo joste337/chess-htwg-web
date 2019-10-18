@@ -1,0 +1,18 @@
+@(controller:de.htwg.se.SE_Chess_HTWG.controller.ControllerInterface)
+
+@main("HTWG Chess") {
+    <div class="gamecontainer">
+        <div class="game">
+            @for(row <- (0 until 8).reverse) {
+                <div class="row">
+                    @for(col <- 0 until 8) {
+                        <span class="square@{col}">
+                            @{controller.getSquare(row,col).toString}
+                        </span>
+                    }
+                </div>
+            <div class="clear"></div>
+            }
+        </div>
+    </div>
+}
