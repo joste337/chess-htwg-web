@@ -1,4 +1,4 @@
-GET     /                           controllers.MainController.chess
+GET     /                           controllers.MainController.index
 GET     /chess                      controllers.MainController.chess
 POST    /chess/new                  controllers.MainController.newGrid
 GET     /chess/move                 controllers.MainController.move(fromRow: Int, fromCol: Int, toRow: Int, toCol: Int)
