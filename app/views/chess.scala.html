@@ -6,7 +6,7 @@
             @for(row <- (0 until 8).reverse) {
                 <div class="row">
                     @for(col <- 0 until 8) {
-                        <span class="square@{col}">
+                        <span class="square@{col}" style="display: inline-block; width: 1em;">
                             @{controller.getSquare(row,col).toString}
                         </span>
                     }
