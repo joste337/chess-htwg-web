@@ -1,0 +1,1964 @@
+[debug] javaOptions: Vector()
+[debug] Forking tests - parallelism = false
+[debug] Create a single-thread test executor
+[debug] Runner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.
+[debug]   Running TaskDef(controllers.MainControllerSpec, sbt.ForkMain$SubclassFingerscan@f86168, false, [SuiteSelector])
+[info] MainControllerSpec:
+[info] HomeController GET
+[info] - should render the index page from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:18)
+[info] - should render the chess page from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:27)
+[info] - should render the chess page and create a new board from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:36)
+[info] - should render the chess page and move a piece from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:45)
+[info] - should render the chess page and ssave from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:54)
+[info] - should render the chess page and load from a new instance of controller *** FAILED ***
+[info]   "
+[info]   
+[info]   
+[info]   
+[info]   <!DOCTYPE html>
+[info]   <html lang="en">
+[info]       <head>
+[info]           
+[info]           <title>HTWG Chess</title>
+[info]           <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css">
+[info]           <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+[info]   
+[info]       </head>
+[info]       <body>
+[info]           
+[info]           
+[info]       <div class="gamecontainer">
+[info]           <div class="game">
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♚
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♛
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♝
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♞
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♜
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♟
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ▮
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ▯
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♙
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]                   <div class="row">
+[info]                       
+[info]                           <span class="square0">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                           <span class="square1">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square2">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square3">
+[info]                               ♕
+[info]                           </span>
+[info]                       
+[info]                           <span class="square4">
+[info]                               ♔
+[info]                           </span>
+[info]                       
+[info]                           <span class="square5">
+[info]                               ♗
+[info]                           </span>
+[info]                       
+[info]                           <span class="square6">
+[info]                               ♘
+[info]                           </span>
+[info]                       
+[info]                           <span class="square7">
+[info]                               ♖
+[info]                           </span>
+[info]                       
+[info]                   </div>
+[info]               <div class="clear"></div>
+[info]               
+[info]           </div>
+[info]       </div>
+[info]   
+[info]   
+[info]         <script src="/assets/javascripts/main.js" type="text/javascript"></script>
+[info]       </body>
+[info]   </html>
+[info]   " did not include substring "----------------" (MainControllerSpec.scala:63)
+[debug]     Produced 0 nested tasks and 6 events.
+[debug] Runner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.
+[info] ScalaTest
+[info] Run completed in 7 seconds, 387 milliseconds.
+[info] Total number of tests run: 6
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 0, failed 6, canceled 0, ignored 0, pending 0
+[info] *** 6 TESTS FAILED ***
+[debug] Summary for JUnit not available.
+[error] Failed: Total 6, Failed 6, Errors 0, Passed 0
+[error] Failed tests:
+[error] 	controllers.MainControllerSpec
+[error] (Test / test) sbt.TestsFailedException: Tests unsuccessful

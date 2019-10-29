@@ -1,0 +1,4240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="DESKTOP-GNESREK" name="controllers.MainControllerSpec" tests="6" errors="0" failures="6" skipped="0" time="4.61" timestamp="2019-10-16T09:15:06">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_101\jre\bin"/><property name="java.vm.version" value="25.101-b13"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=";"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="Java HotSpot(TM) Client VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="DE"/><property name="user.script" value=""/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value=""/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="C:\Workspace\Softwarearchitektur\newwworkspace\chess-htwg-web"/><property name="java.runtime.version" value="1.8.0_101-b13"/><property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/><property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\endorsed"/><property name="os.arch" value="x86"/><property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="user.variant" value=""/><property name="os.name" value="Windows 10"/><property name="sun.jnu.encoding" value="Cp1252"/><property name="jnidispatch.path" value="C:\Users\User\AppData\Local\Temp\jna-2645995\jna4896558801983861370.dll"/><property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Calibre2\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Users\User\Documents\FH\Programmiertechnik\Tools\apache-ant-1.9.7\bin;C:\Users\User\Documents\FH\Programmiertechnik\Tools\AStyle\bin;C:\Users\User\Documents\FH\Programmiertechnik\Tools\findbugs-3.0.1\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.0\bin;C:\Program Files (x86)\sbt\bin;C:\Users\User\.cargo\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\texlive\2017\bin\win32;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;;."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot Client Compiler"/><property name="os.version" value="10.0"/><property name="user.home" value="C:\Users\User"/><property name="user.timezone" value="Europe/Berlin"/><property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/><property name="file.encoding" value="windows-1252"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="C:\Users\User\.IdeaIC2018.2\config\plugins\Scala\launcher\sbt-launch.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.4\lib\idea_rt.jar"/><property name="user.name" value="User"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="xsbt.boot.Boot test"/><property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_101\jre"/><property name="sun.arch.data.model" value="32"/><property name="user.language" value="de"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.windows.WToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_101"/><property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/><property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_101\jre\classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="\"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.desktop" value="windows"/><property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    </properties>
+                     <testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the index page from a new instance of controller" time="2.844">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$2(MainControllerSpec.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the chess page from a new instance of controller" time="0.36">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$3(MainControllerSpec.scala:27)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the chess page and create a new board from a new instance of controller" time="0.297">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$4(MainControllerSpec.scala:36)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the chess page and move a piece from a new instance of controller" time="0.437">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$5(MainControllerSpec.scala:45)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the chess page and ssave from a new instance of controller" time="0.39">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$6(MainControllerSpec.scala:54)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase><testcase classname="controllers.MainControllerSpec" name="HomeController GET should render the chess page and load from a new instance of controller" time="0.282">
+                                                 <failure message="org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: org.scalatest.exceptions.TestFailedException: &quot;
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        
+        &lt;title&gt;HTWG Chess&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;/assets/stylesheets/main.css&quot;&gt;
+        &lt;link rel=&quot;shortcut icon&quot; type=&quot;image/png&quot; href=&quot;/assets/images/favicon.png&quot;&gt;
+
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+    &lt;div class=&quot;gamecontainer&quot;&gt;
+        &lt;div class=&quot;game&quot;&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♚
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♛
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♝
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♞
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♜
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♟
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ▮
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ▯
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♙
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+                &lt;div class=&quot;row&quot;&gt;
+                    
+                        &lt;span class=&quot;square0&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square1&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square2&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square3&quot;&gt;
+                            ♕
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square4&quot;&gt;
+                            ♔
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square5&quot;&gt;
+                            ♗
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square6&quot;&gt;
+                            ♘
+                        &lt;/span&gt;
+                    
+                        &lt;span class=&quot;square7&quot;&gt;
+                            ♖
+                        &lt;/span&gt;
+                    
+                &lt;/div&gt;
+            &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+            
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+      &lt;script src=&quot;/assets/javascripts/main.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+&quot; did not include substring &quot;----------------&quot;
+	at org.scalatest.MatchersHelper$.indicateFailure(MatchersHelper.scala:343)
+	at org.scalatest.MustMatchers$MustMethodHelper$.mustMatcher(MustMatchers.scala:6723)
+	at org.scalatest.MustMatchers$AnyMustWrapper.must(MustMatchers.scala:6759)
+	at controllers.MainControllerSpec.$anonfun$new$7(MainControllerSpec.scala:63)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.WordSpecLike$$anon$3.apply(WordSpecLike.scala:1075)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at controllers.MainControllerSpec.org$scalatestplus$play$BaseOneAppPerTest$$super$withFixture(MainControllerSpec.scala:8)
+	at org.scalatestplus.play.BaseOneAppPerTest.$anonfun$withFixture$1(BaseOneAppPerTest.scala:72)
+	at play.api.test.PlayRunners.$anonfun$running$2(Helpers.scala:85)
+	at play.api.test.PlayRunners.runSynchronized(Helpers.scala:60)
+	at play.api.test.PlayRunners.runSynchronized$(Helpers.scala:54)
+	at play.api.test.Helpers$.runSynchronized(Helpers.scala:676)
+	at play.api.test.PlayRunners.running(Helpers.scala:83)
+	at play.api.test.PlayRunners.running$(Helpers.scala:81)
+	at play.api.test.Helpers$.running(Helpers.scala:676)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture(BaseOneAppPerTest.scala:72)
+	at org.scalatestplus.play.BaseOneAppPerTest.withFixture$(BaseOneAppPerTest.scala:69)
+	at controllers.MainControllerSpec.withFixture(MainControllerSpec.scala:8)
+	at org.scalatest.WordSpecLike.invokeWithFixture$1(WordSpecLike.scala:1073)
+	at org.scalatest.WordSpecLike.$anonfun$runTest$1(WordSpecLike.scala:1085)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:286)
+	at org.scalatest.WordSpecLike.runTest(WordSpecLike.scala:1085)
+	at org.scalatest.WordSpecLike.runTest$(WordSpecLike.scala:1067)
+	at org.scalatest.WordSpec.runTest(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$runTests$1(WordSpecLike.scala:1144)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:393)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:370)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:381)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:376)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:458)
+	at org.scalatest.WordSpecLike.runTests(WordSpecLike.scala:1144)
+	at org.scalatest.WordSpecLike.runTests$(WordSpecLike.scala:1143)
+	at org.scalatest.WordSpec.runTests(WordSpec.scala:1881)
+	at org.scalatest.Suite.run(Suite.scala:1124)
+	at org.scalatest.Suite.run$(Suite.scala:1106)
+	at org.scalatest.WordSpec.org$scalatest$WordSpecLike$$super$run(WordSpec.scala:1881)
+	at org.scalatest.WordSpecLike.$anonfun$run$1(WordSpecLike.scala:1189)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:518)
+	at org.scalatest.WordSpecLike.run(WordSpecLike.scala:1189)
+	at org.scalatest.WordSpecLike.run$(WordSpecLike.scala:1187)
+	at org.scalatest.WordSpec.run(WordSpec.scala:1881)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:317)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:510)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:304)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>

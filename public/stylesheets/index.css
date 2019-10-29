@@ -1,0 +1,65 @@
+.container{
+    width: 80%;
+    margin: auto;
+    color: #000000;
+    background: #F0F8FF;
+    display: block;
+    font-size: large;
+}
+
+#content1{
+    background: #FFFFE0;
+    display: block;
+}
+
+#content1.1 {
+    float: right;
+}
+
+#image1{
+    float: left;
+    height: 10em;
+    width: 20ex;
+}
+
+#content2.1{
+    float: left;
+}
+#image2{
+    float: right;
+    width: 20ex;
+}
+
+#rulelist{
+    clear: left;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.startthegame {
+    font-size: xx-large;
+    position: relative;
+    left: 45%;
+}
+
+.title{
+    background: #87CEFA;
+    color: 	#8B0000;
+    display: in-line;
+}

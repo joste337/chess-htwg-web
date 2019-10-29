@@ -31,8 +31,14 @@ class MainController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def move(fromRow: Int, fromCol: Int, toRow: Int, toCol: Int) = Action { implicit request: Request[AnyContent] =>
+    controller.grid.resetSelectedSquare()
     controller.selectSquare(fromRow, fromCol)
     controller.selectSquare(toRow, toCol)
+    Ok(views.html.chess(controller = controller))
+  }
+
+  def select(row: Int, col: Int) = Action { implicit request: Request[AnyContent] =>
+    controller.selectSquare(row, col)
     Ok(views.html.chess(controller = controller))
   }
 
