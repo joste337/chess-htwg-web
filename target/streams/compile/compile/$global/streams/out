@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Workspace\Softwarearchitektur\newwworkspace\chess-htwg-web\app\views\chess.scala.html:5:101: value elif is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m@squareColor(row:Int, col:Int)=@{if(controller.getSquare(row,col).highlighhted) { "whitesquare" } elif(controller.getSquare(row,col).isWhite) { "blacksquare" }}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Workspace\Softwarearchitektur\newwworkspace\chess-htwg-web\app\views\chess.scala.html:5:147: no arguments allowed for nullary method isWhite: ()Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m@squareColor(row:Int, col:Int)=@{if(controller.getSquare(row,col).highlighhted) { "whitesquare" } elif(controller.getSquare(row,col).isWhite) { "blacksquare" }}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

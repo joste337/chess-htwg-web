@@ -1,17 +1,27 @@
 @(controller:de.htwg.se.SE_Chess_HTWG.controller.ControllerInterface)
 
+
+@pieceImage(row:Int, col:Int)=@{"images/pieces/" + controller.getSquare(row, col).value.get.getImageName + ".png"}
+@squareColor(row:Int, col:Int)=@{
+    if(controller.getSquare(row,col).highlighhted) { "highlighted" }
+    else if(controller.getSquare(row,col).isWhite) { "white" } else { "black" }}
+@hasPiece(row:Int, col:Int)=@{controller.getSquare(row, col).isSet}
+
 @main("HTWG Chess") {
     <div class="gamecontainer">
         <div class="game">
             @for(row <- (0 until 8).reverse) {
                 <div class="row">
                     @for(col <- 0 until 8) {
-                        <span class="square@{col}" style="display: inline-block; width: 1em;">
-                            @{controller.getSquare(row,col).toString}
-                        </span>
+                        <a href="/chess/select?row=@row&col=@col">
+                            <div class="square @squareColor(row,col)">
+                                @if(hasPiece(row, col)) {
+                                    <img src="@routes.Assets.versioned({pieceImage(row, col)})">
+                                }
+                            </div>
+                        </a>
                     }
                 </div>
-            <div class="clear"></div>
             }
         </div>
     </div>
